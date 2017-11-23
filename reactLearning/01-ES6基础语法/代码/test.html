@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button>按钮1</button>
+	<button>按钮2</button>
+	<button>按钮3</button>
+	<button>按钮4</button>
+	<button>按钮5</button>
+</body>
+
+<script type="text/javascript">
+	// let btns = document.getElementsByTagName('button');
+	// console.log(btns.length);
+	// for (var i = 0; i < btns.length; i++) {
+	// 	(function(i){
+	// 		btns[i].onclick = function(){
+	// 		alert(i);
+	// 	}
+	// 	})(i);
+	// }
+
+	// for (let i = 0; i < btns.length; i++) {
+	// 	btns[i].onclick = function(){
+	// 		alert(i);
+	// 	}
+	// }
+
+	// 通过构造函数创建对象
+	// function Person(name, age){
+	// 	this.name = name;
+	// 	this.age = age;
+	// }
+	// Person.prototype = {
+	// 	constructor: Person,
+	// 	personDesc(){
+	// 		console.log(this.name + '->' + this.age);
+	// 	}
+	// }
+
+	// let person = new Person('luseike', 27);
+	// person.personDesc();
+	// console.log(person);
+
+	class Person{
+		constructor(name, age) {
+			this.name = name;
+			this.age = age;
+		}
+
+		print(){
+			console.log(this.name + '->' + this.age);
+		}
+	}
+	let person = new Person('jyl',20);
+	console.log(person);
+</script>
+</html>
